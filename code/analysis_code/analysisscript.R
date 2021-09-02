@@ -51,7 +51,7 @@ ggsave(filename = figure_file, plot=p1)
 
 figure_file2 = here("results","resultfigure2.png")
 png(filename=figure_file2)
-p2 <- boxplot(Height~Sex,data=mydata, main="Sex vs. Height",
+p2 <- boxplot(Height~Sex,data=mydata, main="Boxplot of Sex vs. Height",
         xlab="Sex", ylab="Height")
 dev.off()
 

@@ -1,7 +1,7 @@
 ---
 title: "Example Manuscript Template for a Data Analysis Project"
 subtitle: ""
-author: Andreas Handel
+author: Group 5
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: article
@@ -64,10 +64,18 @@ knitr::kable(resulttable, caption = 'Data summary table.')
 ```
 
 
-Figure \@ref(fig:resultfigure) shows a scatterplot figure produced by one of the R scripts.
+Figure \@ref(fig:resultfigure2) shows a boxplot figure produced by one of the R scripts using the new sex variable we added to the spreadsheet.
 
-```{r resultfigure,  fig.cap='Analysis figure.', echo=FALSE}
-knitr::include_graphics("../../results/resultfigure.png")
+```{r resultfigure2,  fig.cap='Analysis figure.', echo=FALSE}
+knitr::include_graphics("../../results/resultfigure2.png")
+```
+
+
+
+Figure \@ref(fig:resultfigure3) shows a scatterplot figure produced by one of the R scripts using the new age variable we added to the spreadsheet.
+
+```{r resultfigure3,  fig.cap='Analysis figure.', echo=FALSE}
+knitr::include_graphics("../../results/resultfigure3.png")
 ```
 
 
