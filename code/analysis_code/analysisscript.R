@@ -49,6 +49,20 @@ plot(p1)
 figure_file = here("results","resultfigure.png")
 ggsave(filename = figure_file, plot=p1) 
 
+figure_file2 = here("results","resultfigure2.png")
+png(filename=figure_file2)
+p2 <- boxplot(Height~Sex,data=mydata, main="Sex vs. Height",
+        xlab="Sex", ylab="Height")
+dev.off()
+
+p3 <- mydata %>% ggplot(aes(x=Weight, y=Age)) + geom_point() + geom_smooth(method='lm')
+
+#look at figure
+plot(p3)
+
+#save figure
+figure_file3 = here("results","resultfigure3.png")
+ggsave(filename = figure_file3, plot=p3) 
 ######################################
 #Data fitting/statistical analysis
 ######################################
