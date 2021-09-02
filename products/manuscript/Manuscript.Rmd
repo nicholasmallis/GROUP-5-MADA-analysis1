@@ -79,6 +79,12 @@ knitr::include_graphics("../../results/resultfigure3.png")
 ```
 
 
+Figure \@ref(fig:resultfigure) shows the original scatterplot figure produced plotting height vs weight
+
+```{r resultfigure,  fig.cap='Analysis figure.', echo=FALSE}
+knitr::include_graphics("../../results/resultfigure.png")
+```
+
 ## Full analysis
 
 _Use one or several suitable statistical/machine learning methods to analyze your data and to produce meaningful figures, tables, etc. This might again be code that is best placed in one or several separate R scripts that need to be well documented. You want the code to produce figures and data ready for display as tables, and save those. Then you load them here._
